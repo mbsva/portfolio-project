@@ -1,0 +1,453 @@
+@font-face {
+    src: url("assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+    font-family: 'IBM_Plex_Sans_regular';
+}
+@font-face {
+    src: url("assets/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
+    font-family: 'IBM_Plex_Sans_bold';
+}
+
+@font-face {
+    src: url("assets/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf");
+    font-family: 'IBM_Plex_Sans_BoldItalic';
+}
+
+@font-face {
+    src: url("assets/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBoldItalic.ttf");
+    font-family: 'IBM_Plex_Sans_SemiBoldItalic';
+}
+@font-face {
+    src: url("assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf");
+    font-family: 'IBM_Plex_Sans_medium';
+}
+@font-face {
+    src: url("assets/fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf");
+    font-family: 'IBM_Plex_Sans_italic';
+}
+
+body {
+    font-size: 1vw;
+}
+
+.projects {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.projects__title {
+    margin-top: 5vw;
+    margin-left: 2vw;
+    font-family: "IBM_Plex_Sans_bold";
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    text-align: left;
+    text-transform: uppercase;
+    color: transparent;
+    background-image: linear-gradient(to right, #B86ADF, #FF6C63, #FFB147); 
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+
+
+.projects__card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 2vw;
+    transition: transform 0.3s ease;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.projects__card:hover {
+    transform: translateY(-1vw);
+}
+
+.projects__image {
+    width: 16vw;
+    height: auto;
+    margin-left: 2vw; 
+    z-index: 1;
+}
+
+.projects__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects__category {
+    font-family: "IBM_Plex_Sans_bold";
+    font-size: 1.6vw;
+    color: #333;
+    margin-bottom: 2vw;
+    margin-top: 0;
+}
+
+.projects__arrow {
+    width: 4vw;
+    height: auto;
+}
+
+.feedback-button {
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 40px;
+}
+
+.feedback-button__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 2vw;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-family: 'IBM_Plex_Sans_regular';
+    font-size: 1.2vw;
+    border-radius: 0; 
+    transition: background-color 0.3s;
+}
+
+.feedback-button__link:hover {
+    background-color: #333;
+}
+
+.feedback-button__icon {
+    margin-left: 0.5vw; 
+    width: 1.5vw;
+    height: auto;
+}
+
+.testimonial {
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    padding: 5vw;
+    background: linear-gradient(to right, #B86ADF, #FF6C63, #FFB147);
+    border-radius: 0;
+    clear: both; 
+}
+
+.testimonial__heading {
+    font-family: "IBM_Plex_Sans_regular";
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+}
+
+.testimonial__subtitle {
+    font-family: "IBM_Plex_Sans_SemiBoldItalic";
+    font-size: 1.2vw;
+    line-height: 1.5;
+    margin-bottom: 1vw;
+    text-align: center;
+    color: white;
+}
+
+.testimonial__title {
+    font-family: "IBM_Plex_Sans_bold";
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    margin-bottom: 2vw;
+}
+
+.testimonial__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.testimonial__image-container {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.testimonial__image {
+    max-width: 70%;
+    height: auto;
+    border-radius: 1vw;
+}
+
+.testimonial__text {
+    flex: 1 1 55%;
+    color: white;
+}
+
+.testimonial__quote {
+    font-family: "IBM_Plex_Sans_italic";
+    font-size: 1.2vw;
+    line-height: 1.5;
+    margin-bottom: 1vw;
+}
+
+.testimonial__author {
+    font-family: "IBM_Plex_Sans_bold";
+    font-size: 1.1vw;
+    margin-bottom: 0.5vw;
+    margin-top: 35px;
+}
+.testimonial__author__profession {
+    font-family: "IBM_Plex_Sans_regular";
+    font-size: 0.9vw;
+    margin-bottom: 0.5vw;
+}
+
+.testimonial__date {
+    font-family: "IBM_Plex_Sans_regular";
+    font-size: 1.1vw;
+    margin-bottom: 2vw;
+}
+
+.testimonial__divider {
+    margin-top: -5px;
+    border: 0;
+    height: 1px;
+    background: #ffffff;
+    position: absolute;
+    width: 100%; 
+    opacity: 0.5;
+}
+
+.testimonial__navigation {
+    text-align: center;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial__nav-button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    margin: 0 1vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+    color: #FF6C63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.testimonial__nav-button:hover {
+    background-color: #FF6C63;
+    color: white;
+    transform: scale(1.1);
+}
+
+.testimonial__nav-button--prev::before {
+    content: '‹';
+}
+
+.testimonial__nav-button--next::before {
+    content: '›';
+}
+
+
+
+
+.testimonial__slide {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.testimonial__slide.active {
+    display: block;
+    opacity: 1;
+}
+
+
+/* Стили для планшетов (ширина экрана от 768px до 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .projects__title {
+        font-size: 4vw; 
+        padding-left: 3vw;
+        margin-bottom: 4vw;
+        margin-top: 5vw;
+    }
+
+    .projects__grid {
+        grid-template-columns: 1fr;
+        gap: 3vw;
+    }
+
+    .projects__card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .projects__image {
+        width: 25vw;
+        height: auto;
+    }
+
+    .projects__content {
+        margin-left: 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .projects__category {
+        font-size: 3vw; 
+        margin-bottom: 1vw;
+    }
+
+    .projects__arrow {
+        margin-top: 2vw;
+        width: 7vw;
+        height: auto;
+    }
+
+    .feedback-button__link {
+        margin-top: 4vw;
+        font-size: 1.7vw; 
+        padding: 1.7vw 2vw; 
+    }
+
+    .testimonial__subtitle {font-size: 1.7vw;}
+
+    .testimonial__content {
+        flex-direction: column; 
+        position: relative;
+    }
+
+    .testimonial__divider {
+        display: none;
+    }
+
+    .testimonial__image {
+        max-width: 50%; 
+    }
+
+    .testimonial__quote {
+        margin-top: 2vw;
+        font-size: 2vw; 
+    }
+
+    .testimonial__author {
+        margin-top: 30px;
+        font-size: 1.8vw;
+    }
+
+    .testimonial__author__profession {font-size: 1.4vw;}
+
+    .testimonial__nav-button {
+        width: 6vw;
+        height: 6vw;
+        font-size: 3vw; 
+    }
+}
+
+/* Стили для мобильных устройств (ширина экрана до 767px) */
+@media (max-width: 767px) {
+    .projects__title {
+        font-size: 5vw; 
+        padding-left: 3vw;
+        margin-bottom: 4vw;
+        margin-top: 5vw;
+    }
+
+    .projects__grid {
+        grid-template-columns: 1fr; 
+        gap: 3vw;
+        
+    }
+
+    .projects__card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .projects__image {
+        width: 40vw; 
+        height: auto;
+    }
+
+    .projects__content {
+        margin-left: 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .projects__category {
+        font-size: 4vw; 
+        margin-bottom: 1vw;
+    }
+
+    .projects__arrow {
+        margin-top: 5vw;
+        width: 10vw;
+        height: auto;
+    }
+    
+    .feedback-button__link {
+        margin-top: 3vw;
+        font-size: 3vw;
+        padding: 2vw 3vw; /* отступы внутри кнопки */
+    }
+
+    .feedback-button__icon {
+        margin-left: 2vw; 
+        width: 3vw;
+        height: auto;
+    }
+
+    .testimonial {
+        padding: 3vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    .testimonial__subtitle {font-size: 2.4vw;}
+
+    .testimonial__content {
+        flex-direction: column; /* изображение и текст друг под другом */
+        gap: 3vw;
+    }
+
+    .testimonial__divider {
+        display: none;
+    }
+
+    .testimonial__image {
+        max-width: 40%;
+    }
+
+    .testimonial__quote {
+        margin-top: 2vw;
+        font-size: 2.6vw; 
+    }
+
+    .testimonial__author {
+        margin-top: 3vw;
+        font-size: 2.3vw;
+    }
+
+    .testimonial__author__profession {font-size: 2.2vw;}
+
+    .testimonial__nav-button {
+        width: 7vw;
+        height: 7vw;
+        font-size: 4vw; 
+    }
+}

@@ -1,0 +1,253 @@
+@import url(style.css);
+
+aside {
+  width: 20%;
+}
+
+body {
+  display: flex;
+}
+
+.main {
+  width: 73%;
+  margin-top: 50px;
+  margin-left: 7%;
+}
+
+.title_reviews {
+  font-family: IBM Plex Sans, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.4vw;
+  text-align: left;
+}
+
+.subtitle_reviews {
+  font-family: IBM Plex Sans, serif;
+  font-weight: 700;
+  font-size: 2.7vw;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #b86adf, #ff6c63, #ffb147);
+}
+
+.container_reviews {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-family: IBM Plex Sans, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.img_reviewers {
+  width: 200px;
+  border-radius: 10%;
+}
+
+/*Мои стили*/
+
+.reviews {
+  margin-top: 20px;
+}
+
+.review_name {
+  font-family: IBM Plex Sans, serif;
+  font-weight: 600;
+  font-size: 1.8vw;
+  margin-top: 40px;
+}
+
+.review_profession {
+  font-family: IBM Plex Sans;
+}
+.review {
+  display: flex;
+}
+
+.review__img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.review_text {
+  padding: 20px 80px;
+  font-family: IBM Plex Sans, serif;
+  font-style: normal;
+  text-align: justify;
+}
+
+.review__line {
+  height: 0.5px;
+  width: 95%;
+  background-color: #d4d2d2;
+  margin-top: 10px;
+}
+
+details {
+  color: #333;
+}
+
+summary:before {
+  content: "+";
+  font-size: 60px;
+  height: 200px;
+  font-weight: 200;
+  margin: 10px 45px 15px 15px;
+  float: left;
+}
+
+details[open] summary:before {
+  content: "_";
+  margin: 10px 45px 15px 15px;
+  color: #333;
+}
+
+details > summary {
+  padding: 5px;
+  color: #333;
+  cursor: pointer;
+  list-style: none;
+}
+
+.form {
+  font-family: IBM Plex Sans;
+  width: 90%;
+  background-image: linear-gradient(to right, #b86adf, #ff6c63, #ffb147);
+  padding: 60px;
+  color: white;
+  margin-top: 50px;
+  margin-right: 80px;
+  text-transform: uppercase;
+}
+
+.form h1 {
+  margin-bottom: 50px;
+  font-size: 2.7vw;
+}
+
+@media (max-width: 1100px) {
+  .title_reviews {
+    font-size: 1.8vw;
+  }
+  .review_text {
+    padding: 20px 30px;
+  }
+  .subtitle_reviews {
+    font-size: 3vw;
+  }
+  .form h1 {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 770px) {
+  body {
+    display: block;
+  }
+  .main {
+    width: 85%;
+  }
+  .title_reviews {
+    font-size: 2.5vw;
+  }
+  .subtitle_reviews,
+  .form h1 {
+    font-size: 3.5vw;
+  }
+  .review_text {
+    padding-left: 6vw;
+  }
+  .review_name {
+    font-size: 2.4vw;
+  }
+}
+
+@media (max-width: 660px) {
+  summary:before {
+    margin-left: 9px;
+    margin-right: 10%;
+  }
+
+  .img_reviewers {
+    width: 150px;
+  }
+  .form h1 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .review_name {
+    font-size: 3vw;
+  }
+  .subtitle_reviews,
+  .form h1 {
+    font-size: 4vw;
+  }
+  .main {
+    width: 89%;
+  }
+  .form {
+    width: 96%;
+  }
+  summary:before {
+    margin-left: 5px;
+    margin-right: 20px;
+    float: left;
+    height: 100%;
+  }
+
+  details[open] summary:before {
+    content: "_";
+    margin: 10px 45px 15px 15px;
+    color: #333;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    align-content: center;
+  }
+  .review {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .review__img {
+    display: flex;
+    justify-content: center;
+  }
+  .img_reviewers {
+    width: 150px;
+  }
+  summary:before {
+    height: 200px;
+  }
+  .review_name {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .review_profession {
+    text-align: center;
+  }
+  .title_reviews {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .subtitle_reviews {
+    text-align: center;
+  }
+  .subtitle_reviews,
+  .form h1 {
+    font-size: 5vw;
+  }
+  .form {
+    padding: 40px;
+  }
+}

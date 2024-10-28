@@ -1,0 +1,186 @@
+.cases {
+    padding-left: 5vw;
+    padding-right: 10%;
+    padding-top: 80px;
+}
+
+.case_about {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 5vw;
+}
+
+.name_of_case {
+    font-family: IBM Plex Sans;
+    padding-right: 4vw;
+    width: 60%;
+}
+
+.name_of_case h1 {
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, #B86ADF, #FF6C63, #FFB147);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.8vw;
+}
+
+.name_of_case h2 {font-size: 1.4vw;}
+
+
+.pict_of_case {
+    margin-top: 20px;
+    width: 40%;
+}
+
+.pict_of_case > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.numbers {
+    display: flex;
+    font-family: IBM Plex Sans;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.numbers__about {width: 28%;}
+
+.numbers__number {display: flex; align-items: flex-end; font-weight: 500;}
+
+.number {
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, #B86ADF, #FF6C63, #FFB147);
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+.numbers__description {padding-top: 5px;}
+
+.case_pictures {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 130px;
+    margin-bottom: 10%;
+}
+
+.case_pic {width: 50%;}
+
+.case_pic img {object-fit: cover; width: 100%;}
+
+.rsya {
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+    padding: 40px;
+    width: 55%;
+    font-family: IBM Plex Sans;
+}
+
+.form {
+    font-family: IBM Plex Sans;
+    width: 100%;
+    background-image: linear-gradient(to right, #B86ADF, #FF6C63, #FFB147);
+    padding: 60px;
+    color: white;
+}
+
+.form p {margin-bottom: 40px; margin-top: 10px;}
+
+
+
+/* Эксперимент  */
+img.zoom {
+    -moz-user-select: none; user-select: none;
+}
+
+img.zoom:hover {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 99%;
+    max-height: 99%;
+    border: solid rgba(210,210,210,.4);
+    /*border-width: 100vh 100vw;*/
+    cursor: zoom-out;
+}
+
+:not(:active) > img.zoom:not(:hover), img.zoom:active {
+    pointer-events: none;
+}
+
+
+
+@media (max-width: 1100px) {
+    .numbers {margin-bottom: 70px;}
+    .pict_of_case img {height: 100%; object-fit: cover;}
+}
+
+@media (max-width: 950px) {
+    .numbers {margin-bottom: 50px;}
+    .rsya {width: 65%;}
+    .case_pictures {margin-top: 70px;}
+    .name_of_case h2 {font-size: 1.8vw;}
+    .pict_of_case img {height: 100%; object-fit: cover;}
+}
+
+@media (max-width: 950px) {
+    .rsya {width: 75%;}
+    .cases {padding-top: 60px; padding-right: 7%;}
+}
+
+@media (max-width: 770px) {
+    .cases {padding-top: 50px;}
+    .name_of_case h2 {font-size: 2vw;}
+    .number {font-size: 2.5vw;}
+    .pict_of_case img {height: 100%; object-fit: cover;}
+    .case_pic {width: 80%;}
+}
+
+@media (max-width: 650px) {
+    .name_of_case h2 {font-size: 2.3vw;}
+    .number {font-size: 3vw;}
+    .numbers__about {width: 160px; margin-bottom: 10px;}
+    .numbers {flex-wrap: wrap; justify-content: center; gap: 15px;}
+}
+
+@media (max-width: 550px) {
+    .name_of_case h2 {font-size: 2.8vw;}
+    .name_of_case p {font-size: 2.8vw; font-weight: 400;}
+    .numbers__description {font-size: 2.8vw;}
+    .number {font-size: 3vw;}
+    .rsya {padding: 30px; width: 70%; font-size: 3vw;}
+    .form {padding: 10vw;}
+    .numbers__about {width: 230px;}
+}
+
+@media (max-width: 450px) {
+    .cases {padding-top: 30px; padding-right: 7%;}
+    .name_of_case h2 {font-size: 3.3vw;}
+    .name_of_case h1 {font-size: 4vw;}
+    .numbers {margin-bottom: 30px; margin-top: 30px;}
+    .rsya {padding: 20px; width: 75%; font-size: 3.3vw;}
+    .case_pictures {margin-top: 50px; display: block;}
+    .case_pic {width: 100%;}
+    .numbers__about {width: 200px;}
+}
+
+@media (max-width: 370px) {
+    .name_of_case p {font-size: 3.5vw;}
+    .numbers__description {font-size: 3.5vw;}
+    .numbers__number {word-break:normal; font-size: 4vw;}
+    .rsya {padding: 20px; width: 75%; font-size: 3.5vw;}
+    .number {font-size: 4vw;}
+    .numbers {margin-top: 30px;}
+    .numbers__about {width: 200px;}
+}
